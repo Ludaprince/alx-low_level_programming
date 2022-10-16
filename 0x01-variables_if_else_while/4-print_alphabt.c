@@ -5,15 +5,30 @@
  */
 int main(void)
 {
-	char ch;
+	int main(void)
 
-	for (ch = 'a'; ch <= 'z'; ch++)
 	{
-		if (letter != 'e' && letter != 'q')
-			putchar(letter);
+
+			char letter;
+
+
+
+				for (letter = 'a'; letter <= 'z'; letter++)
+
+						{
+
+									if (letter != 'e' && letter != 'q')
+
+													putchar(letter);
+
+										}
+
+
+
+					putchar('\n');
+
+
+
+						return (0);
+
 	}
-
-	putchar('\n');
-
-	return (0);
-}
