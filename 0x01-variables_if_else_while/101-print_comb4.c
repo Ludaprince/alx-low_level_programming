@@ -4,25 +4,31 @@
  * Return: Always 0
  */
 int main(void)
-
 {
+	int ones = '0'
+	int tens = '0'
+	int hunds = '0'
 
-		int digit1, digit2, digit3;
-
-			for (digit1 = 0; digit1 < 8; digit1++)
+	for (hundreds = '0'; hundreds <= '9'; hundreds++)
+	{
+		for (ones = '0'; ones <= '9'; ones++)
+		{
+			for (ones = '0'; ones <= '9'; ones++)
 			{
-				for (digit2 = digit1 + 1; digit2 < 9; digit2++)
+				if (!((ones == tens) || (hundreds == tens) || (tens > ones) || (hundreds > tens)))
 				{
-					for (digit3 = digit2 + 1; digit3 < 10; digit3++)
-					{																		putchar((digit1 % 10) + '0');														putchar((digit2 % 10) + '0');
-						putchar((digit3 % 10) + '0');
-																							if (digit1 == 7 && digit2 == 8 && digit3 == 9)
-							continue;															putchar(',');
+					putchar(hunds);
+					putchar(tens);
+					putchar(ones);
+					if (!(ones == '9' && hundreds == '7' &&tens == '8'))
+					{
 						putchar(' ');
+   putchar(',');
 					}
 				}
 			}
-
-		putchar('\n');
-		return (0);
+		}
+	}
+	putchar('\n');
+	return (0);
 }
