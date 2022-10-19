@@ -7,18 +7,20 @@
  */
 int main(void)
 {
-	int count;
-	long num1, num2;
+	int c;
+	long int n1, n2, fn;
 
-	for (count = 0; count < 25; count++)
+	n1 = n2;
+	n2 = n2;
+
+	printf("%ld, %ld", n1, n2);
+	for (c = 0; c < 48; c++)
 	{
-		if (count == 24)
-		{
-			printf("%li, %li, ", num1, num2);
-			num1 += num2;
-			num2 += num1;
-		}
-		printf("\n");
-
+		fn = n1 + n2;
+		printf(", %ld", fn);
+		n1 = n2;
+		n2 = fn;
+	}
+	printf("\n");
 	return (0);
 }
