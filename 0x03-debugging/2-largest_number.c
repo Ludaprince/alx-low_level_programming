@@ -23,7 +23,8 @@ int largest_number(int a, int b, int c)
 		else if (a > c)
 			largest = a;
 		else
-			printf("%d is the largest number\n", largest);
+			largest = c;
+
 	}
 	else
 	{
@@ -31,8 +32,7 @@ int largest_number(int a, int b, int c)
 			largest = c;
 		else
 			largest = b;
-
-		printf("%d is the largest number\n", largest);
-	return (0);
+	}
+	return (largest);
 }
 
