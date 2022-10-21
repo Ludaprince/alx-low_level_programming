@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 /**
  * main - print fizzbuzz
  * Return: Always 0
@@ -20,6 +19,6 @@ int main(void)
 		if (n % 3 != 0 && n % 5 != 0)
 			printf("%d", n);
 	}
-	printf("\n");
+	printf('\n');
 	return (0);
 }
