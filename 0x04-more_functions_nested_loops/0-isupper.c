@@ -1,9 +1,8 @@
 #include "main.h"
-
 /**
- * _isuper - uppercase letters
- *@c: character to check
- * Return: returns 0 or 1
+ * _isuper - checks for uppercase
+ * @c: the variable
+ * Return: Always 0
  */
 
 int _isuper(int c)
@@ -14,6 +13,6 @@ int _isuper(int c)
 	}
 	else
 	{
-	return (0);
+		return (0);
 	}
 }
