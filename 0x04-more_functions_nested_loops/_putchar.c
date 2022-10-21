@@ -1,5 +1,5 @@
 #include "main.h"
-
+# include <unistd.h>
 /**
  * _putchar - writes the character c to stdio * @c: the character to print
  * Return: success 1
