@@ -1,7 +1,7 @@
 #include "main.h"
-#include <stdio.h>
+
 /**
- * _isuper - checks for uppercase
+ * _isupper - checks for uppercase
  * @c: the variable
  * Return: Always 0 or 1
  */
