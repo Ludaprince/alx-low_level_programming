@@ -11,18 +11,18 @@
 
 size_t print_list(const list_t *h)
 {
-	size_t count = 0;
+	const list_t *head = h;
+	unsigned int x;
 
-	while (h != NULL)
+	x = 0;
+	while (head != NULL)
 	{
-		if (h->str == NULL)
-		{
+		if (head->str == NULL)
 			printf("[0] (nil)\n");
-		}
 		else
-		printf("[%d] %s\n", h->len, h->str);
-		count++;
-		h = h->next;
+			printf("[%d] %s\n", head->len, head->str);
+		head = head->next;
+		x += 1;
 	}
-	return (count);
+	return (x);
 }
